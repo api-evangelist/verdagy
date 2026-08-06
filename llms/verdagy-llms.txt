@@ -1,0 +1,46 @@
+# Verdagy
+
+> Verdagy designs and manufactures dynamic alkaline water electrolysis systems for
+> large-scale green hydrogen production. Its eDynamic platform runs very large-area
+> membrane-based electrochemical cells at high current density with dynamic turndown,
+> so electrolyzers can follow intermittent renewable power. Verdagy sells electrolyzer
+> hardware and project capacity to industrial hydrogen buyers — refining, ammonia,
+> methanol, e-fuels and SAF. It is a hardware company: as of 2026-08-05 it publishes
+> no public API, no developer portal, and no machine-readable API contract.
+
+## APIs
+
+Verdagy publishes no public API. Contract discovery on 2026-08-05 probed verdagy.com
+and simulator.verdagy.com for OpenAPI, Swagger, GraphQL, MCP, llms.txt and A2A agent
+cards and found none. See the x-coverage block in apis.yml for the probed URLs and
+their HTTP statuses.
+
+## Company
+
+- [Website](https://verdagy.com/): Company site.
+- [Product — eDynamic electrolyzers](https://verdagy.com/product-electrolyzers-clean-hydrogen/): The electrolyzer product line.
+- [About](https://verdagy.com/clean-hydrogen-company/): Company, technology and facilities.
+- [News](https://verdagy.com/news/): Company news and announcements ([RSS](https://verdagy.com/news/feed/)).
+- [Contact](https://verdagy.com/contact/): Contact form.
+- [Careers](https://verdagy.com/hydrogen-jobs/): Open roles.
+- [Privacy Policy](https://verdagy.com/privacy-policy/)
+- [LinkedIn](https://www.linkedin.com/company/verdagy/)
+- [GitHub organization](https://github.com/Verdagy): Exists and self-identifies with verdagy.com; holds one forked third-party research repository and no first-party code.
+
+## Tools
+
+- [Energize simulator](https://simulator.verdagy.com/): A public browser-side green
+  hydrogen project simulator. It is a client-side Angular application — no backend
+  API endpoints were observable in its bundle.
+
+## Artifacts
+
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/verdagy/refs/heads/main/security/verdagy-domain-security.yml): Probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture for verdagy.com.
+
+## Notes
+
+- This is an API Evangelist third-party profile assembled from publicly reachable
+  material. See README.md.
+- generated: 2026-08-05
+- method: generated
+- source: apis.yml + repo artifacts + live probes of verdagy.com

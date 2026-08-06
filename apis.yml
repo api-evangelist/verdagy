@@ -1,7 +1,18 @@
 aid: verdagy
 name: Verdagy
-description: 'Verdagy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Verdagy is a Moss Landing, California clean-energy hardware company that
+  designs and manufactures dynamic alkaline water electrolysis systems for large-scale
+  green hydrogen production. Its eDynamic platform runs very large-area membrane-based
+  electrochemical cells at high current density with dynamic turndown, so electrolyzers
+  can follow intermittent renewable power, targeting fossil-fuel cost parity for clean
+  hydrogen by 2028 without subsidies. The company operates a 2 MW eDynamic demonstration
+  plant at Moss Landing with more than 21,000 commercial cell hours, plus 500 kW and
+  100 kW test plants, and opened a DOE-supported gigawatt-scale manufacturing facility
+  of more than 100,000 square feet in Newark, California. Verdagy sells electrolyzer
+  hardware and project capacity to industrial hydrogen buyers — refining, ammonia,
+  methanol, e-fuels and SAF — rather than software; it publishes no developer program,
+  no public API, and no machine-readable API contract.'
+image: https://verdagy.com/wp-content/themes/verdagy/img/logo.png
 url: https://raw.githubusercontent.com/api-evangelist/verdagy/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,15 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Energy
+- Clean Energy
+- Green Hydrogen
+- Hydrogen
+- Electrolyzers
+- Industrial Equipment
+- Manufacturing
+- Decarbonization
+- Climate Tech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,59 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/verdagy-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/verdagy_stock/
+  url: https://verdagy.com/
+- type: Product
+  url: https://verdagy.com/product-electrolyzers-clean-hydrogen/
+- type: Blog
+  url: https://verdagy.com/news/
+- type: News
+  url: https://verdagy.com/news/
+- type: Support
+  url: https://verdagy.com/contact/
+- type: Contact
+  url: https://verdagy.com/contact/
+- type: Careers
+  url: https://verdagy.com/hydrogen-jobs/
+- type: PrivacyPolicy
+  url: https://verdagy.com/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/verdagy/
+- type: GitHubOrganization
+  url: https://github.com/Verdagy
+  description: Organization exists and self-identifies with verdagy.com; holds one forked
+    third-party research repository and no first-party code.
+- type: Simulator
+  url: https://simulator.verdagy.com/
+  description: Public browser-side green hydrogen project simulator (client-side Angular
+    application; no observable backend API).
+- type: LLMsTxt
+  url: llms/verdagy-llms.txt
+
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Verdagy manufactures alkaline electrolyzer hardware for industrial hydrogen
+    plants; its only web application, the Energize simulator, is a client-side Angular
+    calculator whose bundle contains no first-party API host, and every OpenAPI, GraphQL,
+    MCP and agent-card path on verdagy.com returns 404.
+  evidence:
+  - url: https://verdagy.com/openapi.json
+    status: 404
+  - url: https://verdagy.com/llms.txt
+    status: 404
+  - url: https://verdagy.com/.well-known/agent-card.json
+    status: 404
+  - url: https://verdagy.com/.well-known/security.txt
+    status: 404
+  - url: https://simulator.verdagy.com/definitely-not-a-real-path-zzz9
+    status: 200
+  checked: '2026-08-05'
