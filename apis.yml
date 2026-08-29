@@ -12,6 +12,17 @@ description: 'Verdagy is a Moss Landing, California clean-energy hardware compan
   hardware and project capacity to industrial hydrogen buyers — refining, ammonia,
   methanol, e-fuels and SAF — rather than software; it publishes no developer program,
   no public API, and no machine-readable API contract.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://verdagy.com/wp-content/themes/verdagy/img/logo.png
 url: https://raw.githubusercontent.com/api-evangelist/verdagy/refs/heads/main/apis.yml
 x-type: company
